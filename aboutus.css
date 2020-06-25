@@ -1,0 +1,175 @@
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+
+html{
+    font-size:62.5%;
+    
+}
+
+
+body{
+    
+    background-color: #fff;
+    font-size:1.6rem;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;	
+    width: 100%;
+}
+h1{	
+    font-family: 'Raleway', sans-serif;	
+    text-align: center;	
+    color: #E84c3d;
+    font-size:6rem;
+}
+
+a {	
+    text-decoration: none;	
+    color: black;
+    font-size:3rem;	
+    
+}	
+a:hover {	
+    font-weight: bold;	
+}	
+
+	
+img {	
+    width: 100%;
+    height:39rem;	
+    object-fit: cover;	
+    display: block;	
+    margin: 2%;	
+    transition: transform .2s;
+    margin-top: 4%;	
+    margin-left: auto;	
+    margin-right: auto;	
+    border-radius: 2%;	
+    
+}	
+img:hover {	
+    opacity: 80%;
+    transform: scale (1.5);
+}	
+
+
+header{
+    display:flex;
+    justify-content: center;
+    background-color: #1A1E23;
+    
+}
+
+    
+    
+    
+
+    
+
+
+
+.title-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+  
+
+.services-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width:100%;
+    margin:3rem auto;
+}
+
+.service{
+    width:40%;
+    text-align:center;
+}
+.service img{
+    width:100%;
+}
+
+.footer {
+    
+    text-align: center;
+    background-color:#1A1E23;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+
+
+
+@media screen and (max-width: 500px){
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    .title-container div {	
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 5%;
+        background-size: cover;
+    }
+
+   
+
+    nav a:first-child{
+        font-weight: bold;
+    }
+
+    .title-container hr{
+        width: 100%;
+    }
+
+    .services-container{
+        width: 80%;
+        margin-top: 3%;
+        flex-direction: column;
+    }
+    .service{
+
+        height: 100%;
+        width: 100%;
+    }
+    .service img{
+        width: 45vw;
+        height: 35vh;
+    }
+
+    .service{
+        font-size: 1.3rem;
+    }
+} 

@@ -1,0 +1,331 @@
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+
+html{
+    font-size:62.5%;
+    
+}
+
+
+body{
+    
+    background-color: #fff;
+    font-size:1.6rem;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;	
+    width: 100%;
+}
+h1{	
+    font-family: 'Raleway', sans-serif;	
+    text-align: center;	
+    
+   
+}	
+h1{
+    color: #E84c3d;
+    font-size:6rem;
+    
+    
+    
+}
+a {	
+    text-decoration: none;	
+    color: black;
+    font-size:3rem;	
+    
+}	
+a:hover {	
+    font-weight: bold;	
+}	
+
+	
+img {	
+    width: 100%;
+    height:39rem;	
+    object-fit: cover;	
+    display: block;	
+    margin: 2%;	
+    transition: transform .2s;
+    margin-top: 4%;	
+    margin-left: auto;	
+    margin-right: auto;	
+    border-radius: 2%;	
+    
+}	
+img:hover {	
+    opacity: 80%;
+    transform: scale (1.5);
+}	
+
+
+header{
+    display:flex;
+    justify-content: center;
+    background-color: #1A1E23;
+    
+}
+nav{
+    margin: 2%;
+    width: 75%;
+    display:flex;
+    justify-content:flex-end;
+    
+    
+    
+}
+nav a{
+    color:#E84C3D;
+    
+}
+nav span{
+    margin: 2%
+    
+
+}
+
+
+
+.title-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.title-container div  {	
+    background-image: url('https://cdn.pixabay.com/photo/2016/02/05/15/28/south-africa-1181167_960_720.jpg');		
+    border-radius: 6px;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    color: white;	
+    width:90%;
+    height: auto;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:60vh;
+    margin:4rem;
+}	
+
+
+button {
+    display: flex;
+    background-color: #fff;
+    color: #E84c3d;
+    padding: 2.5rem;
+    font-size: 4rem;
+    border-radius:6px;
+    
+}
+button:hover{
+    opacity: 80%;
+
+   
+   
+    
+    
+}
+
+.mission {
+    background-color: #E84c3d;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;	
+    margin: 3rem;
+    
+}
+
+
+.services-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width:100%;
+    margin:3rem auto;
+}
+
+.service{
+    width:40%;
+    text-align:center;
+}
+.service img{
+    width:100%;
+}
+
+.footer {
+    
+    text-align: center;
+    background-color:#1A1E23;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+
+#footernav { 
+    margin: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.fa {
+    padding: 2rem;
+    font-size: 4rem;
+    margin: 1rem;
+    height: 3rem;
+    text-align: center;
+    text-decoration: none;
+   
+  }
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+.fa-facebook {
+  
+  color: white;
+}
+
+.fa-twitter {
+  
+  color: white;
+}
+
+
+
+
+@media screen and (max-width: 900px){
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    
+
+    .title-container div {	
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 5%;
+        background-size: cover;
+    }
+
+    nav{
+        width: 35%;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+    }
+    nav a{
+        font-size: 1.5rem;
+    }
+
+    nav a:first-child{
+        font-weight: bold;
+    }
+
+    .title-container hr{
+        width: 100%;
+    }
+
+    .artists-container{
+        width: 80%;
+        margin-top: 3%;
+        flex-direction: column;
+    }
+    .service{
+
+        height: 100%;
+        width: 100%;
+    }
+    .service img{
+        width: 45vw;
+        height: 35vh;
+    }
+
+    .service{
+        font-size: 1.3rem;
+    }
+} 
+
+
+@media screen and (max-width: 500px){
+
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    .title-container div {	
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 5%;
+        background-size: cover;
+    }
+
+   
+
+    nav a:first-child{
+        font-weight: bold;
+    }
+
+    .title-container hr{
+        width: 100%;
+    }
+
+    .services-container{
+        width: 80%;
+        margin-top: 3%;
+        flex-direction: column;
+    }
+    .service{
+
+        height: 100%;
+        width: 100%;
+    }
+    .service img{
+        width: 45vw;
+        height: 35vh;
+    }
+
+    .service{
+        font-size: 1.3rem;
+    }
+} 
